@@ -1,0 +1,40 @@
+{
+  "scripts": {
+    "test": "mocha test/",
+    "bootstrap-mods": "npm install eslint mocha --save-dev",
+    "bootstrap-fs": "touch index.js; mkdir -p lib examples test",
+    "bootstrap-eslint": "eslint --init",
+    "bootstrap": "npm run bootstrap-mods && npm run bootstrap-fs && npm init && npm run bootstrap-eslint"
+  },
+  "devDependencies": {
+    "async": "^2.5.0",
+    "eslint": "^4.5.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.5.0",
+    "phantomjs": "^2.1.7"
+  },
+  "name": "site_checker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoosteeno/site_checker.git"
+  },
+  "author": "",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/hoosteeno/site_checker/issues"
+  },
+  "homepage": "https://github.com/hoosteeno/site_checker#readme",
+  "description": ""
+}
